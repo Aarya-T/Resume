@@ -1,9 +1,97 @@
-<h1>Contact Me!</h1>
-<p> 
-    <ul>
-    <li>Name: Aarya Tambde <br /></li>
-    <li>Mobile No: +917977146985<br /></li>
-    <li>Email ID: aaryatam46@gmail.com</li>
-    <li><a href="https://www.linkedin.com/in/aarya-tambde-39127831a">LinkedIn</a></li>
-    </ul>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        /* General body and font styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            color: #495057;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fade-in animation for the entire page */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Main container for the contact card */
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Heading styling with slide-down animation */
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            animation: slideInDown 1s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* List and list item styling */
+        ul {
+            list-style: none; /* Removes bullet points */
+            padding: 0;
+            margin: 0; /* Removes default margin */
+        }
+
+        li {
+            padding: 10px 0;
+            font-size: 1.1rem;
+            color: #495057;
+            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+        }
+
+        li:hover {
+            transform: translateX(5px); /* Slides to the right on hover */
+        }
+
+        /* Link styling with hover effect */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Me!</h1>
+        <ul>
+            <li>Name: Aarya Tambde</li>
+            <li>Mobile No: +917977146985</li>
+            <li>Email ID: <a href="mailto:aaryatam46@gmail.com">aaryatam46@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/aarya-tambde-39127831a" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+</body>
+</html>
